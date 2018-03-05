@@ -76,7 +76,7 @@ namespace ImGui
 		if (!ItemAdd(bb, NULL))
 			return 0;
 
-		const bool hovered = IsHovered(bb, id);
+		const bool hovered = IsItemHovered(ImGuiHoveredFlags_Default);
 
 		int max = 0;
 		while (max < maxpoints && points[max].x >= 0) max++;
@@ -248,7 +248,7 @@ namespace ImGui
 			return 0;
 		}
 
-		const bool hovered = IsHovered(bb, id);
+		const bool hovered = IsItemHovered(ImGuiHoveredFlags_Default);
 
 		int max = 0;
 		while (max < maxpoints && points[max].x >= 0) {
