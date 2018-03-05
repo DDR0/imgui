@@ -73,7 +73,7 @@ namespace ImGui
 
 		ImRect bb(window->DC.CursorPos, window->DC.CursorPos + size);
 		ItemSize(bb);
-		if (!ItemAdd(bb, NULL))
+		if (!ItemAdd(bb, 0))
 			return 0;
 
 		const bool hovered = IsItemHovered(ImGuiHoveredFlags_Default);
@@ -244,7 +244,7 @@ namespace ImGui
 
 		ImRect bb(window->DC.CursorPos, window->DC.CursorPos + size);
 		ItemSize(bb);
-		if(!ItemAdd(bb, NULL)) {
+		if (!ItemAdd(bb, 0)) {
 			return 0;
 		}
 
