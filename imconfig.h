@@ -79,3 +79,4 @@ namespace ImGui
 #define IM_QUAT_CLASS_EXTRA		\
 	ImQuat(const glm::quat& f) { x = f.x; y = f.y; z = f.z; w = f.w; }	\
 	operator glm::quat() const { return glm::quat(w,x,y,z); }
+
